@@ -1,0 +1,45 @@
+/* Guest-facing product skin. Layout/scroll constraints remain in style.css. */
+.app{--surface:#fff;--paper:#f4f5f1;--ink:#20382f;--muted:#69766e;--line:#e1e7df;--green:#245a47;--tint:#eef3ed}
+.app.dark{--surface:#22332b;--paper:#17251e;--ink:#edf0e5;--muted:#b1beb0;--line:#415347;--green:#86b39a;--tint:#30463a}
+.app.guest-chat-app>.topbar{max-width:1600px;padding:12px 24px;background:var(--paper);border-bottom:0;gap:8px}
+.topbar .brand{font-size:.85em;letter-spacing:1.5px}.topbar .brand-mark{width:38px;height:38px;font-size:24px}.topbar .brand small{font-size:.7em;letter-spacing:2px}
+.topbar .quick-preferences button,.topbar .font-controls{border-radius:10px;box-shadow:none}.topbar .top-language{font-size:.85em;min-height:36px;border-color:var(--line)}
+.app.guest-chat-app>.guest-shell{max-width:1600px;padding:0 24px 8px;gap:8px}
+.guest-chat-app .chat-panel,.guest-chat-app .guest-order-sheet{border:1px solid var(--line);border-radius:18px;background:var(--surface);box-shadow:0 4px 20px #20382f04}
+.guest-chat-app .panda-stage{padding:14px 20px;gap:12px;min-height:0;background:var(--surface);border-bottom:1px solid var(--line)}
+.guest-chat-app .panda-character{width:48px;height:48px;flex-basis:48px;filter:none;animation:none}
+.guest-chat-app .panda-dialogue{border:0;border-radius:0;background:none;box-shadow:none;padding:0}
+.guest-chat-app .panda-dialogue:before,.guest-chat-app .panda-dialogue:after,.guest-chat-app .stage-sticker{display:none}
+.guest-chat-app .panda-name{font-size:.62em;color:var(--muted);letter-spacing:1.5px}
+.guest-chat-app .panda-dialogue h2{font-size:1.15em;letter-spacing:-.3px;margin:3px 0;font-weight:700}
+.guest-chat-app .panda-dialogue p{font-size:.8em;color:var(--muted)}
+.guest-chat-app .chat-messages{padding:20px;background:var(--surface);background-image:none;font-size:1em;scrollbar-width:thin;scrollbar-color:#b9c9be transparent}
+.guest-chat-app .bubble{padding:12px 16px;line-height:1.55;border-radius:16px;max-width:88%;box-shadow:none;font-size:1em}
+.guest-chat-app .bubble.assistant{background:var(--tint);border-bottom-left-radius:5px}.guest-chat-app .bubble.user{background:var(--green);border-bottom-right-radius:5px}
+.guest-chat-app .chat-menu{max-width:none;padding:0;background:transparent!important;gap:8px;margin:16px 0}
+.guest-chat-app .chat-menu>strong{font-size:.8em;color:var(--muted);font-weight:600;margin-bottom:4px;letter-spacing:.4px}
+.guest-chat-app .chat-menu-row{padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);gap:10px;box-shadow:none;font-size:.95em}
+.guest-chat-app .chat-menu-row small{font-size:.8em;margin-top:4px;color:var(--muted)}
+.guest-chat-app .chat-menu-row button{width:40px;height:40px;min-width:40px;min-height:40px;border-radius:10px;font-size:1.35em;box-shadow:none;background:var(--tint);border:0}
+.app.guest-chat-app .chat-panel>.composer{padding:12px 16px;gap:8px;border-top:1px solid var(--line)}
+.guest-chat-app .composer .voice{height:44px;min-height:44px;border-radius:12px;font-size:1em;letter-spacing:0;box-shadow:none}
+.guest-chat-app .composer form{border:1.5px solid #9bac9f;border-radius:12px;min-height:58px;background:var(--surface);box-shadow:none}
+.guest-chat-app .composer form:focus-within{border-color:var(--green);box-shadow:0 0 0 3px #245a4712}
+.guest-chat-app .composer textarea{height:56px;min-height:56px;padding:12px;resize:none;outline:none!important;font-size:1em}
+.guest-chat-app .composer .send{border-radius:10px;min-width:44px;min-height:44px;margin:5px;background:var(--green);box-shadow:none}
+.guest-chat-app .guest-order-sheet .basket{padding:20px}.guest-chat-app .basket-title{padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:12px}.guest-chat-app .basket-title h3{font-size:1em;font-weight:700}
+.guest-chat-app .basket-line{font-size:.95em;padding:12px 0}.guest-chat-app .basket-line strong{font-weight:600}.guest-chat-app .basket-remove{border:0;background:var(--tint);border-radius:10px;font-size:20px;color:var(--muted)}
+.guest-chat-app .basket-total{font-size:1em;margin-top:12px}.guest-chat-app .basket .primary{border-radius:12px;min-height:48px;box-shadow:none;font-size:1em}
+.guest-chat-app .guest-order-sheet .order-visual{padding:16px 20px}.guest-chat-app>main>footer{font-size:.65em;color:var(--muted);height:24px;min-height:24px}
+@media(max-width:700px){
+ .app.guest-chat-app>.topbar{padding:8px 10px}.app.guest-chat-app>.guest-shell{padding:0 8px 6px}
+ .guest-chat-app .panda-stage{padding:10px 12px}.guest-chat-app .panda-character{width:40px;height:40px;flex-basis:40px}
+ .guest-chat-app .panda-dialogue h2{font-size:1em}.guest-chat-app .chat-messages{padding:12px}
+ .guest-chat-app .bubble{max-width:94%;padding:10px 12px}.guest-chat-app .chat-menu-row{padding:10px}
+ .app.guest-chat-app .chat-panel>.composer{padding:8px}.guest-chat-app .guest-order-sheet .basket{padding:12px}
+ .guest-chat-app .guest-order-sheet .order-visual{padding:12px}.guest-chat-app .font-controls output{display:none}
+}
+@media(max-height:600px){.guest-chat-app .panda-stage{display:none}.guest-chat-app>main>footer{display:none}}
+.live-tables{margin:20px 0}.simulation-controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:12px 0;padding:12px;background:var(--tint);border-radius:12px}.table-map{height:430px;position:relative;border:1px solid var(--line);border-radius:16px;background:var(--surface);overflow:auto}.table-node{position:absolute;transform:translate(-50%,-50%);width:108px;min-height:90px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;border:1px solid var(--line);border-radius:14px;background:var(--tint);font-size:.8em;padding:8px}.table-node strong{font-size:1.2em}.table-node.ready{background:#e0f2de;border-color:#71a46c}.table-node.new{background:#fff0cc;border-color:#d3ab53}.table-node.preparing{background:#e3ecfa;border-color:#739ac3}.table-node.draft{border-style:dashed}.floor-edit{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:10px 0}.floor-edit input{width:100%}@media(max-width:600px){.table-map{min-width:320px}.table-node{width:72px;font-size:.65em}}
+
+.order-receipt{padding:20px}.order-receipt h3{font-size:1em}.receipt-status{display:inline-block;padding:5px 10px;margin:10px 0;border-radius:8px;background:var(--tint);font-size:.85em}.receipt-line{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:.95em}.receipt-line strong{white-space:nowrap}.order-receipt>small{color:var(--muted)}

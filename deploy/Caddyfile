@@ -1,0 +1,9 @@
+# Set CAFE_HOST to your domain in Caddy's environment, e.g. cafe.example.com.
+# Caddy manages browser HTTPS and HTTP/1.1, HTTP/2, HTTP/3 negotiation.
+{$CAFE_HOST} {
+    encode zstd gzip
+    request_body {
+        max_size 8MB
+    }
+    reverse_proxy 127.0.0.1:8788
+}

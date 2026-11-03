@@ -1,0 +1,13 @@
+[build]
+target = "index.html"
+dist = "dist"
+[serve]
+addresses = ["127.0.0.1"]
+port = 8791
+[[proxy]]
+backend = "http://127.0.0.1:8788/api/"
+[[proxy]]
+backend = "http://127.0.0.1:8788/qr"
+
+[watch]
+ignore = ["data", ".run", "target", "docs"]
