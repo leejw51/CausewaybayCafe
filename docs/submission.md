@@ -12,6 +12,8 @@ The product is **locally hosted operations + cloud Meta inference**, not an offl
 
 ## Three-minute demo storyboard
 
+The sequence below is a suggested storyboard. For the current recorded MP4, actual viewing guidance and paste-ready submission copy, use the [judge brief](judge-brief.md).
+
 - 0:00–0:20 — Establish the problem and local Mac installation. Show the guest/table entry screen.
 - 0:20–1:10 — Guest delegates a meal order. Show the real response, authoritative order details and a follow-up asking what was ordered.
 - 1:10–1:40 — Generate/view an actual Muse Image food illustration. Explain that the written order is authoritative and images are optional.

@@ -4,6 +4,8 @@ Install an AI café assistant on the owner's Mac. Guests scan a table QR and ord
 
 Built for the Meta Global AI Developer Hackathon, **Build for Your World** theme.
 
+For judging: [project brief, recorded demo guide and verification scope](docs/judge-brief.md).
+
 ## What to try
 
 1. Guest: “We are three people. Pick three meals and three drinks for us.”
